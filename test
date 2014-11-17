@@ -1,6 +1,7 @@
 #!/bin/sh
 #This is used to 
 #by Rsync over ssh
+
 echo `date +%Y.%m.%d`" "`date +%H:%M:%S`" Delete files older than 13 days!!" 
 # delete files more than 13 days
 find /mnt -iname "105*" -maxdepth 1 -ctime +13 -exec rm -rf {} \;
