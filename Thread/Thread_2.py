@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+
 import _thread as thread
 stdoutmutex = thread.allocate_lock()
 exitmutexes = [thread.allocate_lock() for i in range(10)]
 
 def counter(myId, count):
     for i in range(count):
-        stdoutmutex.acquire()
+        stdoutmutex.acquire()       #Return True then continue;False then wait
         print('[%s] => %s' % (myId, i))
         stdoutmutex.release()
     exitmutexes[myId].acquire()
