@@ -7,13 +7,8 @@ class Mythread(threading.Thread):
         self.count = count
         self.mutex = mutex
         threading.Thread.__init__(self)
-# subclass Thread object
-# per-thread state information
-# shared objects, not globals
     def run(self):
-# run provides thread logic
         for i in range(self.count):
-# still sync stdout access
             with self.mutex:
                 print('[%s] => %s' % (self.myId, i))
 
