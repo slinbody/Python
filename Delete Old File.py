@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+"""Delete Older than 3 days files """
 import os
 import datetime
 dir_to_search = '/Your/Path'
