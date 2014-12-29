@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+import os,sys
+for (thisdir,dirhere,filehere) in os.walk('/tmp/ttt'):
+    if filehere:
+        for x in filehere:
+            os.path.getsize(os.path.join(thisdir,x))
