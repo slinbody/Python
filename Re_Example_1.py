@@ -20,4 +20,10 @@ patterns = \
 rules = [build_match_and_apply_functions(pattern, search, replace)  
          for (pattern, search, replace) in patterns]
 
-print(rules[0][1]('box'))
+noun = 'boxxxxx'
+
+for matches_rule, apply_rule in rules:  
+    if matches_rule(noun):
+        print(apply_rule(noun))
+        break
+
