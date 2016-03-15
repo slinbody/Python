@@ -50,7 +50,7 @@ def Update_Port(value):
 
 ####   主程式開始   #####
 d=datetime.datetime.now()
-with open('/usr/local/work/PH-Classroom/208/'+d.strftime('%a'),'r') as f:  ##  讀出今天課表檔案
+with open('./'+d.strftime('%a'),'r') as f:  ##  讀出今天課表檔案
     lines = f.read().splitlines()
 list_x=[]
 for y in lines:                                 ##  讀出課表時間
