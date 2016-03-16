@@ -45,7 +45,6 @@ def Update_Port(value):
     tn.write(b"exit"+b"\n")
     tn.write(b"exit"+b"\n")
     output=tn.read_all().decode('utf-8')
-    print(output)
 
 
 ####   主程式開始   #####
