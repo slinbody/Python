@@ -8,16 +8,15 @@ import datetime
 fromstation=str(1008)
 tostation=str(1031)
 
-now = datetime.datetime.now()
-today = now.strftime("%Y/%m/%d")
-fromtime= now.strftime("%H%M")
+now = datetime.datetime.now()        #現在時間
+today = now.strftime("%Y/%m/%d")    
+fromtime= now.strftime("%H%M")       #搜尋啟始時間
 totime= (datetime.datetime.today() + datetime.timedelta(hours=2)).strftime("%H%M")
 if fromtime > totime:
         totime='2359'
-#print(fromtime)
 
 if datetime.datetime.now() >  datetime.datetime.combine(datetime.datetime.today(),datetime.time(14, 0)):
-        (fromstation,tostation)= (tostation,fromstation)
+        (fromstation,tostation) = (tostation,fromstation)
 
 rs = requests.get('http://twtraffic.tra.gov.tw/twrail/SearchResult.aspx?searchtype=0&searchdate='+today+'&fromcity=0&tocity=0&fromstation='+fromstation+'&tostation='+tostation+'&trainclass=2&timetype=1&fromtime='+fromtime+'&totime='+totime)
 
