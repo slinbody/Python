@@ -14,7 +14,7 @@ fromtime= now.strftime("%H%M")
 #print(fromtime)
 
 if datetime.datetime.now() >  datetime.datetime.combine(datetime.datetime.today(),datetime.time(14, 0)):
-        (fromstation,tostation) = (tostation,fromstation) #若超過下午兩點，出發與目的交換
+        (fromstation,tostation) = (tostation,fromstation) #若現在時間超過下午兩點，出發與目的交換
 
 rs = requests.get('http://twtraffic.tra.gov.tw/twrail/SearchResult.aspx?searchtype=0&searchdate='+today+'&fromcity=0&tocity=0&fromstation='+fromstation+'&tostation='+tostation+'&trainclass=2&timetype=1&fromtime='+fromtime+'&totime=2359')
 
