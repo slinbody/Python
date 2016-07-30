@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ 查詢當日火車時間 """
+"""Station編號: 萬華1009  台北1008  松山1007  汐科1031
 import requests
 from bs4 import BeautifulSoup as bs
 import datetime
