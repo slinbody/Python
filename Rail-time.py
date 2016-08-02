@@ -29,6 +29,7 @@ if now >  datetime.datetime.combine(datetime.datetime.today(),datetime.time(14, 
 rs = requests.get('http://twtraffic.tra.gov.tw/twrail/SearchResult.aspx?searchtype=0&searchdate='+today+'&fromcity=0&tocity=0&fromstation='+fromstation+'&tostation='+tostation+'&trainclass=2&timetype=1&fromtime='+fromtime+'&totime='+totime)
 
 #soup = bs(rs.text,"html5lib")
+#soup = bs(rs.text,"html.parser") # use this if on window platform
 soup = bs(rs.content,"html5lib")
 #print(soup.prettify())
 
