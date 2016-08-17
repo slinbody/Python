@@ -5,17 +5,22 @@
 import os
 import subprocess
 from time import sleep
-filename = '/tmp/free_wife'
-if not os.path.exists(filename):
-    os.system('touch '+filename)
-statinfo = str(os.stat(filename)).split(',')[8]
+
+filename = '/etc/config/api_request_result.conf'
 oldinfo = ''
+
 while True:
+#    if not os.path.exists(filename):              touch出來的
+#        os.system('touch '+filename)              會清掉之前結果，要改
+
+    statinfo = str(os.stat(filename)).split(',')[8]
+
     if statinfo != oldinfo:
-        subprocess.call('clear',shell=True)
         with open(filename,'r') as f:
-#        subprocess.call('clear',shell=True)
+            subprocess.call('clear',shell=True)
             print(f.read())
-#        oldinfo = statinfo
-    sleep(2)
+
+    oldinfo = statinfo
+    sleep(0.2)
+
 
