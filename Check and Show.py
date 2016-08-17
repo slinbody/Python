@@ -5,7 +5,7 @@
 import os
 import subprocess
 from time import sleep
-filename = '/etc/config/cmd_result'
+filename = '/tmp/free_wife'
 if not os.path.exists(filename):
     os.system('touch '+filename)
 statinfo = str(os.stat(filename)).split(',')[8]
