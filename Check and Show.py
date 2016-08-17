@@ -11,8 +11,11 @@ if not os.path.exists(filename):
 statinfo = str(os.stat(filename)).split(',')[8]
 oldinfo = ''
 while True:
-    subprocess.call('clear',shell=True)
     if statinfo != oldinfo:
+        subprocess.call('clear',shell=True)
         with open(filename,'r') as f:
+#        subprocess.call('clear',shell=True)
             print(f.read())
+#        oldinfo = statinfo
     sleep(2)
+
