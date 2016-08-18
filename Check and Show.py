@@ -6,7 +6,7 @@ import os
 import subprocess
 from time import sleep
 
-filename = '/etc/config/api_request_result.conf'
+filename = '/tmp/free.wife'
 oldinfo = ''
 
 while True:
