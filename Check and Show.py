@@ -11,10 +11,12 @@ oldinfo = ''
 
 while True:
     try:
-        statinfo = str(os.stat(filename)).split(',')[8]
+        statinfo = os.stat(filename).st_mtime
     except OSError:
         continue
 
+    if os.stat(filename).st_size == 0:
+        continue
 
     if statinfo != oldinfo:
         with open(filename,'r') as f:
