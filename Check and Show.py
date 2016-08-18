@@ -10,10 +10,11 @@ filename = '/etc/config/api_request_result.conf'
 oldinfo = ''
 
 while True:
-#    if not os.path.exists(filename):              touch出來的
-#        os.system('touch '+filename)              會清掉之前結果，要改
+    try:
+        statinfo = str(os.stat(filename)).split(',')[8]
+    except OSError:
+        continue
 
-    statinfo = str(os.stat(filename)).split(',')[8]
 
     if statinfo != oldinfo:
         with open(filename,'r') as f:
