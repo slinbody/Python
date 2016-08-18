@@ -24,6 +24,9 @@ while True:
             print(f.read())
 
     oldinfo = statinfo
-    sleep(0.2)
+    try:
+        sleep(0.2)
+    except KeyboardInterrupt:
+        sys.exit()
 
 
