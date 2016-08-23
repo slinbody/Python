@@ -1,4 +1,7 @@
 #!/usr/bin/python2.7
+'''
+送訊息
+'''
 import redis
 import time
 
