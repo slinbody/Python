@@ -10,11 +10,11 @@ channel.subscribe('test')
 Input = ''
 
 while True:
-#    Input = input('What u want to show: ')
+
     if Input:
         queue.publish("test", Input)
 
-#        p = channel.subscribe('test')
+
     message = channel.get_message()
     if message:
         print("You Input : ", message['data'])
