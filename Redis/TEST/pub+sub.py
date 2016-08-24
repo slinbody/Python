@@ -14,7 +14,6 @@ while True:
     if Input:
         queue.publish("test", Input)
 
-
     message = channel.get_message()
     if message:
         print("You Input : ", message['data'])
