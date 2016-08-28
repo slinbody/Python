@@ -6,8 +6,8 @@
 import redis,sys
 queue = redis.StrictRedis(host='localhost')
 
-print("Content-Type:image/jpg")
-print()
+print("Content-Type:image/jpg")     # 需指定header
+print()                             # 此行須存在
 
 bstdout = open(sys.stdout.fileno(), 'wb', closefd=False)
 bstdout.write(queue.get('505'))
