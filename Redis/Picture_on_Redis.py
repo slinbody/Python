@@ -1,14 +1,17 @@
 #!/usr/bin/python3 -u
 '''
-將圖片從redis讀出來
-透過CGI輸出到網頁上
+將Redis上的圖片，隨機讀出
+透過CGI送到網頁上
 '''
 import redis,sys
+import time
+import random
 queue = redis.StrictRedis(host='localhost')
+Pic_List = ['1','505']
 
-print("Content-Type:image/jpg")     # 需指定header
-print()                             # 此行須存在
+print("Content-Type:image/jpg")
+print()
 
 bstdout = open(sys.stdout.fileno(), 'wb', closefd=False)
-bstdout.write(queue.get('505'))
+bstdout.write(queue.get(Pic_List[random.randrange(0,2)]))
 bstdout.flush()
