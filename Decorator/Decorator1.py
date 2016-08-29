@@ -12,3 +12,10 @@ def add(x,y):
     print"x+y=",x+y
 
 add(4,6)
+
+'''
+result:
+function name :add
+x =  4 y =  6
+x+y= 10
+'''
