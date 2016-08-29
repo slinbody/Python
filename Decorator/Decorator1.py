@@ -13,8 +13,7 @@ def add(x,y):
 
 add(4,6)
 
-'''
-result:
+''' result:
 function name :add
 x =  4 y =  6
 x+y= 10
