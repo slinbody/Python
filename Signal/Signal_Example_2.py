@@ -1,7 +1,7 @@
 #!/usr/bin/python
 '''
-10秒內要收到 'kill -USR1 PID'
-沒收到就停止程式 
+10秒內沒收到'kill -USR1 PID',就結束程式
+每收到'kill -USR1 PID', time就更新為10
 使用Global變數的方法來寫
 '''
 import signal
