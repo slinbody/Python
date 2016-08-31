@@ -1,6 +1,7 @@
 #!/usr/bin/python
 '''
 30秒內沒收到'kill -USR1 PID',就結束程式
+每收到'kill -USR1 PID', time就更新為30
 '''
 import signal
 import time
