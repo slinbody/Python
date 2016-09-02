@@ -24,6 +24,8 @@ if __name__ == '__main__':
   while x.time > 0:
     time.sleep(5)
     x.time = x.time - 1
-    print"time : ",x.time
+    with open('/tmp/file.log','a+') as fd:
+      fd.write(time.strftime("%H:%M:%S",time.gmtime())+' '+str(x.time)+' '+str(os.getpid())+' '+procStatus(os.getpid())+'\n')
+
 
   print "End of the program"
