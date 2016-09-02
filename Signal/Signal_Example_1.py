@@ -28,4 +28,4 @@ if __name__ == '__main__':
       fd.write(time.strftime("%H:%M:%S",time.gmtime())+' '+str(x.time)+' '+str(os.getpid())+' '+procStatus(os.getpid())+'\n')
 
 
-  print "End of the program"
+  print "End of the program" 
