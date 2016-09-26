@@ -17,7 +17,6 @@ if __name__ == '__main__':
         case_fun = {
                 'x': x1,
                 'y': y1,
-                'z': z1,
-                'default': default
+                'z': z1
         }
         case_fun.get(sys.argv[1] ,default)()
