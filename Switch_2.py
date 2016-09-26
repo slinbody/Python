@@ -5,7 +5,6 @@ import sys
 def x1(a,b):
         for i in sys.argv[:]:
                 print i
-
 def y1(a,b):
         for i in reversed(sys.argv[:]):
                 print i
