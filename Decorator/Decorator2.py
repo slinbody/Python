@@ -15,3 +15,8 @@ def add(x,y):
     print"x+y=",x+y
 
 add(4,6)
+
+# --- result ---
+# start of  :add
+# x+y= 10
+# end of :add
