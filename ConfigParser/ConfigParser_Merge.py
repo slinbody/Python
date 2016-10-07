@@ -3,8 +3,8 @@ import ConfigParser
 
 def Config_Append(SRC_Config ,DST_Config):
     import tempfile
-    temp_src_name = tempfile.NamedTemporaryFile()
-    temp_dst_name = tempfile.NamedTemporaryFile()
+    temp_src_name = tempfile.NamedTemporaryFile(delete=True)
+    temp_dst_name = tempfile.NamedTemporaryFile(delete=True)
     with open(temp_src_name.name,'wb') as src, open(temp_dst_name.name,'wb') as dst:
         SRC_Config.write(src)
         DST_Config.write(dst)
