@@ -11,6 +11,7 @@ class color:
    RED = '\033[91m'
    BOLD = '\033[1m'
    UNDERLINE = '\033[4m'
+   BWYB = '\033[30;43m'
    END = '\033[0m'
 
 print color.BOLD + 'Hello World !' + color.END
