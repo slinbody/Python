@@ -6,7 +6,7 @@ def insert_xml(result):
     result.append(tmp)
     return result
     
-result = ET.Element('profile')
+result = ET.Element('ROOT')
 result = insert_xml(result)
 
 ET.dump(result)
