@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+'''
+HD44780 on Raspberry 
+'''
 #-*-coding:utf8-*-
 import RPi.GPIO as GPIO
 from time import sleep
