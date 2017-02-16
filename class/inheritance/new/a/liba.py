@@ -11,8 +11,9 @@ class car(object):
 class small_Car(car):
     def __init__(self):
         self.size='small'
-        super(small_Car, self).__init__()
-
+        #if you want to override parent method, you have to call parent __init__
+        super(small_Car, self).__init__() 
+        
     def car_size(self):
         print 'My size is '+self.size
 
