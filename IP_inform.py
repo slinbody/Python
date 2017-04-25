@@ -38,4 +38,4 @@ if not my_current_ip == tmp_IP:
     with open(CurrentIP_record, "w") as fd:
         fd.write(my_current_ip)
 else:
-    print "NO CHANGE"
+    print "NO CHANGE" 
