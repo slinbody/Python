@@ -7,8 +7,8 @@ import os.path
 CurrentIP_record = "/tmp/CurrentIP"
 
 def send_IP(my_ip):
-    fromaddr = 'slinbody@gmail.com'
-    toaddrs  = ['slinbody@gmail.com','slinbody@taifex.com.tw']
+    fromaddr = 'a@gmail.com'
+    toaddrs  = ['b@gmail.com','c@com.tw']
     subject = 'IP change'
     x = datetime.datetime.now()
     now = x.strftime("%b %d %H:%M:%S")
