@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf8 -*-
 '''
-抓證交所的股票收盤資料
+抓證交所的股票即時資料
 reference https://github.com/Asoul/tsrtc for detail
 suck http://mis.twse.com.tw/stock/api/getStockInfo.jsp?json=1&delay=0&ex_ch=%20tse_1101.tw|tse_0050.tw
 '''
