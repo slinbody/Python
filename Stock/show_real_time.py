@@ -38,4 +38,4 @@ def show_realtime(*stock_id):
 
 if __name__ == '__main__':
     print show_realtime('2002','2012')
-    print time.strftime("%H:%m:%S")
+    print time.strftime("%H:%M:%S")
