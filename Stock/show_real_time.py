@@ -25,11 +25,10 @@ def show_realtime(*stock_id):
     req.get('http://mis.twse.com.tw/stock/index.jsp', headers=headers)
     response = req.get(query_url)
 #    print response.text
-    r = response.text
-    if r.strip() == '':
+    if response.text.strip() == '':
         return 'nothing'
 
-    content = json.loads(r, 'utf-8')
+    content = json.loads(response.text, 'utf-8')
     data = content['msgArray']
 #    return '\n'.join(x['n']+" : "+x['z']+","+x['t'] for x in data)
 #    return data
