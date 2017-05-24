@@ -2,6 +2,7 @@
 # -*- coding: utf8 -*-
 '''
 抓證交所的股票收盤資料
+this does not work since 2017/05/04
 '''
 import urllib2
 from lxml import etree
