@@ -6,6 +6,9 @@ result = {}
 
 with open('/tmp/menu') as fd:
     for line in fd:
+        if line == '\n':
+            continue
+
         line = line.replace('\n','')
         line = line.split('+')
         for x in line:
