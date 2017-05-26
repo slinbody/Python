@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf8 -*-
+# This is used to count the number of items
 
 result = {}
 
