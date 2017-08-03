@@ -1,8 +1,8 @@
 import pandas
 
-df1 = pandas.read_csv('/tmp/file-1')
-df2 = pandas.read_csv('/tmp/file-2')
-df3 = pandas.read_csv('/tmp/file-3')
+df1 = pandas.read_csv('/tmp/file-1')<br>
+df2 = pandas.read_csv('/tmp/file-2')<br>
+df3 = pandas.read_csv('/tmp/file-3')<br>
 
 df_total = pandas.concat([df1, df2, df3]) # 合併<br>
 df_total = df_total[['Col-A','Col-B','Col-C']] # 只取某部分欄位資料<br>
