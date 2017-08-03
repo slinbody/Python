@@ -13,9 +13,9 @@ df_group = df.groupby(df.columns.tolist(), as_index=False).size() # 依欄位排
 
 df_group = pandas.DataFrame({'Count': df_group}).reset_index() # 排序過的資料轉成DataFrame
 
-df_group[-1] = [ data ]              # 插入資料
-df_group.index = df_group.index + 1
-df_group = df_group.sort()
+df_group[-1] = [ data ]              # 插入資料<br>
+df_group.index = df_group.index + 1<br>
+df_group = df_group.sort()<br>
 
 
 df_group = df_group.sort('NUM', ascedning=False) # 以某欄位進行排序，反向排序
