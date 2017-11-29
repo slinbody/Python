@@ -10,3 +10,7 @@ print m3
 
 for i in re.finditer('1+', ip):
     print i.group()
+
+s1='2017-11-29 Wed 10:08:48 192.168.16.16: PING GOOD, TRACEROUTE GOOD'
+pattern='[\w]+ (?=GOOD)'
+re.findall(pattern, s1)   # result:  ['PING ', 'TRACEROUTE ']
