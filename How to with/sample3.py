@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+# ref: http://preshing.com/20110920/the-python-with-statement-by-example/
+# 
+
 import sqlite3
 
 class sqlite_class:
