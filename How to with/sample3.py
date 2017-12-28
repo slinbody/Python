@@ -18,7 +18,6 @@ class sqlite_class:
     '''
         self.conn.close()
 
-a = sqlite_class()
-with a as cursor:
+with sqlite_class() as cursor:
     for i in c.execute('select NAME,STATUS from XYFTTB'):
         print(i)
