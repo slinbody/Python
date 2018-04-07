@@ -16,3 +16,4 @@ redis_db.hgetall("TEST1")
 
 redis_db.keys()
 redis_db.delete("TEST1")
+
