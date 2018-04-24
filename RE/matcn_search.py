@@ -12,7 +12,7 @@ for i in re.finditer('1+', ip):
     print i.group()
 
 s1='2017-11-29 Wed 10:08:48 192.168.16.16: PING GOOD, TRACEROUTE GOOD'
-pattern='[\w]+ (?=GOOD)'
+pattern='[\w]+ (?=GOOD)'       # ?=表示從匹配此pattern的位置可以找
 re.findall(pattern, s1)        # result: ['PING ', 'TRACEROUTE ']
 pattern="(?<=PING )[\w]+"
 re.findall(ping_pattern, s1)   # result: ['GOOD']
