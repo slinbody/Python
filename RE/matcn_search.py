@@ -22,7 +22,7 @@ str1 = 'delay data for tr_code=1,msg_kind=2,seq=1671,'
 p1 = re.compile(delay_pattern)
 p1.findall(str1)    # ['1671']
 
-str2 = 'lost data for tr_code=1,msg_kind=2,from 11 to 66,'
 lost_pattern = 'lost data for tr_code=1,msg_kind=2,from ([\d]+) to ([\d]+),'
+str2 = 'lost data for tr_code=1,msg_kind=2,from 11 to 66,'
 p2 = re.compile(lost_pattern)
 p2.findall(str2)    # [('11', '66')]
