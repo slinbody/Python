@@ -17,4 +17,6 @@ redis_db.hgetall("TEST1")
 redis_db.keys()
 redis_db.delete("TEST1")
 
+# try hget, hdel if u need
+
 # by the way, if u store set type data in redis, it will go wrong. You should avoid use set data type in redis
