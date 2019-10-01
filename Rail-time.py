@@ -43,3 +43,5 @@ for row in rows:
         cols = row.find_all('td')
         x = [element.text.strip() for element in cols]
         print(x[0],x[1],x[3],x[4],x[5],x[6])
+
+
