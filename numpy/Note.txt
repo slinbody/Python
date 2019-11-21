@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+import numpy as np
+
+arr = np.array([44,33,11])  #create 1D array
+
+for i in np.where(arr==33)[0]:  # find value == 33 element
+    np.delete(arr,i)            # delete
+    
+np.insert(arr, len(arr), 100)   # insert to end
