@@ -7,3 +7,5 @@ for i in np.where(arr==33)[0]:  # find value == 33 element
     np.delete(arr,i)            # delete
     
 np.insert(arr, len(arr), 100)   # insert to end
+if 33 in arr:                   # check if exist
+    print('YES')
