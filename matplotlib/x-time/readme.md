@@ -1,1 +1,1 @@
-![Result](/123.png)
+![Result](123.png)
